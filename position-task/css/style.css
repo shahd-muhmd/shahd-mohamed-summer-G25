@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: #f2f3f5;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5%
+}
+
+.news-section {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin: auto;
+}
+
+.card {
+    background: #fff;
+    width: 25%;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .06);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.top-meta {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 20px;
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 13px;
+    color: #707070;
+}
+
+.top-meta .item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.top-meta i {
+    font-size: 13px
+}
+
+.top-meta .java {
+    color: #3a3a3a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.top-meta .php {
+    color: #707070;
+    text-decoration: none;
+}
+
+.card-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .55);
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.overlay a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 35% 5% 0;
+}
+
+.content {
+    padding: 38px 18px 22px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #31d4d5;
+    text-transform: uppercase;
+    margin: 3% 0;
+}
+
+.divider {
+    width: 30px;
+    height: 5px;
+    background: #000;
+    margin: 4% 0;
+}
+
+.excerpt {
+    color: #868686;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.author {
+    position: absolute;
+    right: 16px;
+    top: 200px;
+    transform: translateY(45%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    background: #fff;
+}
+
+.author img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.card:hover .overlay {
+    display: flex
+}
+
+.card:hover .top-meta .java {
+    color: #31d4d5
+}
