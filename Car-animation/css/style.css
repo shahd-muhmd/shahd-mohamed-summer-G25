@@ -1,0 +1,35 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.road {
+    background-image: url('../images/road-types-highway-top-view-illustration-free-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    overflow: hidden;
+}
+
+.car {
+    margin-bottom: 20px;
+    margin-left: -200px;
+    animation: moveCar 4s linear infinite;
+}
+
+.car img {
+    width: 200px;
+    height: auto;
+}
+
+@keyframes moveCar {
+    0% {
+        margin-left: -220px;
+    }
+
+    100% {
+        margin-left: calc(100% + 220px);
+    }
+}
